@@ -7,6 +7,14 @@ public class Saluda {
 		System.out.println("dime tu nombre");
 		String nombre = sc.nextLine();
 		System.out.println("Hola "+nombre);
+		
+		
 	}
+	public class Nombres{
+		private String nombre;
 
+		public void Nombre(String nombre){
+			this.nombre = nombre;
+		}
+	}
 }
