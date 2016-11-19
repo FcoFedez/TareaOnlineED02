@@ -11,6 +11,7 @@ public class Saluda {
 		
 	}
 	public class Nombres{
+		Scanner sc = new Scanner(System.in);
 		/**
 		 * @return the nombre
 		 */
@@ -29,6 +30,12 @@ public class Saluda {
 
 		public void Nombre(String nombre){
 			this.nombre = nombre;
+		}
+		
+		public void pideNombre(){
+			System.out.println("dime tu nombre");
+			String nombre = sc.nextLine();
+			System.out.println("Hola "+nombre);
 		}
 	}
 }
