@@ -7,11 +7,12 @@ public class Saluda {
 		System.out.println("dime tu nombre");
 		String nombre = sc.nextLine();
 		System.out.println("Hola "+nombre);
-		
-		
+//		Nombres.pideNombre();
+		System.out.println(Nombres.pideNombre());
 	}
-	public class Nombres{
-		Scanner sc = new Scanner(System.in);
+
+	static class Nombres{
+		static Scanner sc = new Scanner(System.in);
 		/**
 		 * @return the nombre
 		 */
@@ -32,10 +33,16 @@ public class Saluda {
 			this.nombre = nombre;
 		}
 		
-		public void pideNombre(){
+		public Nombres(){String nombre="";}
+		
+		public static String pideNombre(){
 			System.out.println("dime tu nombre");
 			String nombre = sc.nextLine();
-			System.out.println("Hola "+nombre);
+			return "hola "+nombre;
+			
 		}
+		
+		
 	}
+	
 }
